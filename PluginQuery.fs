@@ -23,7 +23,7 @@ let riderSolutionsPath =
     
 let recentSolutions =
         if riderSolutionsPath.IsNone
-        then (failwith "Jetbrains Rider was not found in %APPDATA%\JetBrains")
+        then (failwith @"Jetbrains Rider was not found in %APPDATA%\JetBrains")
         else
             riderSolutionsPath.Value
             |> (fun f ->
