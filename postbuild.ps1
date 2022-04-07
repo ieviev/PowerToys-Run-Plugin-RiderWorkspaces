@@ -1,14 +1,15 @@
 dotnet publish -c Release -o publish -r win-x64 --framework net6.0-windows
 
 $localpublish = "publish"
-$out = "$env:LOCALAPPDATA\Microsoft\PowerToys\PowerToys Run\Plugins\publish"
+$out = "$env:LOCALAPPDATA\Microsoft\PowerToys\PowerToys Run\Plugins\RiderWorkspaces\"
 
-Copy-Item -Recurse $localpublish\* $out -Force
+Copy-Item -Recurse $localpublish $out -Force
 
 $currlocation = Get-Location
 Set-Location $out
 
-Stop-Process -n PowerToys
+$powertoys = Get-Process -n PowerToys -ErrorAction SilentlyContinue
+if ($powertoys) { Stop-Process $powertoys }
 
 ILRepack.exe /out:RiderWorkspaces.dll `
 FSharp.Core.dll `
