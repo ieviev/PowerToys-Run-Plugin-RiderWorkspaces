@@ -1,0 +1,13 @@
+{
+	"ID": "F2D2C23B084D413DB66FE0C79D6C2A6H",
+	"ActionKeyword": "[",
+	"IsGlobal": false,
+	"Name": "RiderWorkspaces",
+	"Author": "nr-4",
+	"Version": "1.0.0",
+	"Language": "csharp",
+	"Website": "https://github.com/nr-4/PowerToys-Run-Plugin-RiderWorkspaces",
+	"ExecuteFileName": "RiderWorkspaces.dll",
+	"IcoPathDark": "images\\rider.png",
+	"IcoPathLight": "images\\rider.png"
+}
