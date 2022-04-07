@@ -1,4 +1,6 @@
-# Recent Jetbrains rider projects plugin for Powertoys Run  
+# Jetbrains Rider Workspaces plugin for Powertoys Run  
+
+similar to the VS Code Workspaces plugin included with PowerToys
 
 ![](_resources/23-42-50.png)
 
