@@ -17,3 +17,4 @@ let xmlentries =
     |> Seq.map SolutionInfoRecord.ofXmlEntry 
     |> Seq.toArray
 
+

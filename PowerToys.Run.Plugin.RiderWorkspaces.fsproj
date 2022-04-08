@@ -1,16 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-<!--        <TargetFramework>net48</TargetFramework>-->
-<!--        <OutputType>Exe</OutputType>-->
         <TargetFramework>net6.0-windows</TargetFramework>
-<!--        <Platforms>x64</Platforms>-->
+        <Platforms>x64</Platforms>
         <NeutralLanguage>en-US</NeutralLanguage>
-<!--        <UseWindowsForms>true</UseWindowsForms>-->
         <useWPF>true</useWPF>
-<!--        <PublishSingleFile>true</PublishSingleFile>-->
-<!--        <SelfContained>true</SelfContained>-->
-<!--        <RuntimeIdentifier>win-x64</RuntimeIdentifier>-->
-<!--        <PublishReadyToRun>true</PublishReadyToRun>-->
+        <Version>0.57.0</Version>
     </PropertyGroup>
 
     <ItemGroup>
@@ -30,7 +24,6 @@
         <PackageReference Include="FSharp.Data" Version="4.2.6" />
         <PackageReference Update="FSharp.Core" Version="6.0.1" />
         <PackageReference Include="ILRepack" Version="2.0.18" />
-        
     </ItemGroup>
     
     <ItemGroup>

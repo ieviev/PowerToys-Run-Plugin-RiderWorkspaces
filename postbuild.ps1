@@ -9,7 +9,7 @@ $currlocation = Get-Location
 Set-Location $out
 
 $powertoys = Get-Process -n PowerToys -ErrorAction SilentlyContinue
-if ($powertoys) { Stop-Process $powertoys }
+if ($powertoys) { Stop-Process -n PowerToys }
 
 ILRepack.exe /out:RiderWorkspaces.dll `
 FSharp.Core.dll `
