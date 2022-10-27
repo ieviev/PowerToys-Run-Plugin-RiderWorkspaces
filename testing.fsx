@@ -8,9 +8,12 @@
 
 open PowerToys.Run.Plugin.RiderWorkspaces
 open PowerToys.Run.Plugin.RiderWorkspaces.PluginQuery
+open System.Diagnostics
 
 let recentSolutions = 
     PluginQuery.recentSolutions
+
+        
 
 let xmlentries = 
     recentSolutions 
@@ -18,3 +21,12 @@ let xmlentries =
     |> Seq.toArray
 
 
+do xmlentries |> Seq.iter (printfn "%A")
+
+
+let str1 = """C:\Users\kast/Documents/GitHub/resharper-fsharp/ReSharper.FSharp/ReSharper.FSharp.sln"""
+let str2 = str1.Replace("/","\\")
+
+let p = new Process( StartInfo = ProcessStartInfo(str2,"",UseShellExecute=true))
+p.Start()
+true

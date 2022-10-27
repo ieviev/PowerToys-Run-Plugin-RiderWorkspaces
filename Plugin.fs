@@ -19,7 +19,6 @@ type RiderPlugin() =
             SubTitle=sub,
             Title=name
         )
-    
         
     interface IPlugin with
         member this.Description: string = "RiderWorkspaces"
@@ -41,7 +40,6 @@ type RiderPlugin() =
                 
                 let dayspassed = DateTimeOffset.Now.Subtract(f.lastOpened).TotalHours |> int    
                 score <- score - dayspassed
-                
                 let folder = f.path |> Path.GetDirectoryName
                 let dateonly = f.lastOpened.ToString("yyyy-MM-dd")
                 let subtitle = $"Project Folder: {folder}, Last opened {dateonly} "

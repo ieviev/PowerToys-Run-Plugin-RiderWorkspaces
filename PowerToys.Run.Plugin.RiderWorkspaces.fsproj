@@ -27,14 +27,12 @@
     </ItemGroup>
     
     <ItemGroup>
-<!--      <Reference Include="netstandard" />-->
       <Reference Include="Wox.Infrastructure">
         <HintPath>lib\Wox.Infrastructure.dll</HintPath>
       </Reference>
       <Reference Include="Wox.Plugin">
         <HintPath>lib\Wox.Plugin.dll</HintPath>
       </Reference>
-<!--        <PackageReference Update="FSharp.Core" Version="6.0.1"/>-->
     </ItemGroup>
 
 </Project>
